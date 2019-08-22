@@ -89,6 +89,7 @@
             this.txbIngredient.Name = "txbIngredient";
             this.txbIngredient.Size = new System.Drawing.Size(193, 20);
             this.txbIngredient.TabIndex = 5;
+            this.txbIngredient.TextChanged += new System.EventHandler(this.TxbIngredient_TextChanged);
             // 
             // livIngredienten
             // 
@@ -98,6 +99,8 @@
             this.livIngredienten.TabIndex = 6;
             this.livIngredienten.UseCompatibleStateImageBehavior = false;
             this.livIngredienten.DrawColumnHeader += new System.Windows.Forms.DrawListViewColumnHeaderEventHandler(this.LivIngredienten_DrawColumnHeader);
+            this.livIngredienten.DrawItem += new System.Windows.Forms.DrawListViewItemEventHandler(this.LivIngredienten_DrawItem);
+            this.livIngredienten.DrawSubItem += new System.Windows.Forms.DrawListViewSubItemEventHandler(this.LivIngredienten_DrawSubItem);
             // 
             // Form1
             // 
